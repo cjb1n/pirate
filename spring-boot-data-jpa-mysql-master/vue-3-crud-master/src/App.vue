@@ -4,10 +4,13 @@
       <router-link to="/" class="navbar-brand">AWeSome</router-link>
       <div class="navbar-nav mr-auto">
         <li class="nav-item">
-          <router-link to="/tutorials" class="nav-link">Tutorials -> 회원리스트</router-link>
+          <router-link to="/memberlist" class="nav-link">내 정보</router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/add" class="nav-link">add -> 회원가입</router-link>
+          <router-link to="/signup" class="nav-link">회원가입</router-link>
+        </li>
+        <li class="nav-item">
+          <router-link to="/login" class="nav-link">로그인</router-link>
         </li>
       </div>
     </nav>

@@ -28,6 +28,13 @@ class TutorialDataService {
   findByTitle(title) {
     return http.get(`/tutorials?title=${title}`);
   }
+
+  login(title) {
+    return http.get(`/tutorials/${title}`);
+  }
+
 }
+
+
 
 export default new TutorialDataService();

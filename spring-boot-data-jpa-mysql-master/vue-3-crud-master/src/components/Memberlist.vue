@@ -14,7 +14,7 @@
       </div>
     </div>
     <div class="col-md-6">
-      <h4>Tutorials List</h4>
+      <h4>내 정보</h4>
       <ul class="list-group">
         <li class="list-group-item"
           :class="{ active: index == currentIndex }"
@@ -34,7 +34,7 @@
       <div v-if="currentTutorial">
         <h4>Tutorial</h4>
         <div>
-          <label><strong>Title:</strong></label> {{ currentTutorial.title }}
+          <label><strong>Title: </strong></label> {{ currentTutorial.title }}
         </div>
         <div>
           <label><strong>Description:</strong></label> {{ currentTutorial.description }}
@@ -47,7 +47,7 @@
       </div>
       <div v-else>
         <br />
-        <p>Please click on a Tutorial...</p>
+        <p>see details</p>
       </div>
     </div>
   </div>

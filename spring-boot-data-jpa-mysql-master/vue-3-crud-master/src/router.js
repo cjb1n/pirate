@@ -3,9 +3,9 @@ import { createWebHistory, createRouter } from "vue-router";
 const routes =  [
   {
     path: "/",
-    alias: "/tutorials",
-    name: "tutorials",
-    component: () => import("./components/TutorialsList")
+    alias: "/memberlist",
+    name: "memberlist",
+    component: () => import("./components/Memberlist")
   },
   {
     path: "/tutorials/:id",
@@ -13,9 +13,14 @@ const routes =  [
     component: () => import("./components/Tutorial")
   },
   {
-    path: "/add",
-    name: "add",
-    component: () => import("./components/AddTutorial")
+    path: "/signup",
+    name: "signup",
+    component: () => import("./components/Signup")
+  },
+  {
+    path: "/login",
+    name: "login",
+    component: () => import("./components/login")
   }
 ];
 

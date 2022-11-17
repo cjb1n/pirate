@@ -2,7 +2,7 @@
   <div class="submit-form">
     <div v-if="!submitted">
       <div class="form-group">
-        <label for="title">Title -> 아이디</label>
+        <label for="title">아이디</label>
         <input
           type="text"
           class="form-control"
@@ -14,8 +14,9 @@
       </div>
 
       <div class="form-group">
-        <label for="description">Description -> 비밀번호</label>
+        <label for="description">비밀번호</label>
         <input
+          type="password"
           class="form-control"
           id="description"
           required
@@ -24,15 +25,16 @@
         />
       </div>
 
-      <button @click="saveTutorial" class="btn btn-success">Submit</button>
+      <button @click="saveSignup" class="btn btn-success">가입하기</button>
     </div>
 
     <div v-else>
-      <h4>You submitted successfully!</h4>
-      <button class="btn btn-success" @click="newTutorial">Add</button>
+      <h4>회원가입이 완료되었습니다.</h4>
+      <button class="btn btn-success" @click="newTutorial">돌아가기</button>
     </div>
   </div>
 </template>
+
 
 <script>
 import TutorialDataService from "../services/TutorialDataService";
@@ -51,7 +53,7 @@ export default {
     };
   },
   methods: {
-    saveTutorial() {
+    saveSignup() {
       var data = {
         title: this.tutorial.title,
         description: this.tutorial.description
