@@ -1,25 +1,24 @@
 <template>
   <div id="app">
-    <nav class="navbar navbar-expand navbar-dark bg-dark">
-      <router-link to="/" class="navbar-brand">AWeSome</router-link>
-      <div class="navbar-nav mr-auto">
-        <li class="nav-item">
-          <router-link to="/memberlist" class="nav-link">내 정보</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/signup" class="nav-link">회원가입</router-link>
-        </li>
-        <li class="nav-item">
-          <router-link to="/login" class="nav-link">로그인</router-link>
-        </li>
-      </div>
-    </nav>
+    <div class="navbar">
+      <a class="logo" href="/">
+        <img src="/assets/awesome.png" height="40px">
+      </a>
+      <ul>
+        <li><a href="#">호텔</a></li>
+        <li><a href="/memberlist">회원 정보</a></li>
+        <li><a href="/signup">회원가입</a></li>
+        <li><a href="/login">로그인</a></li>
+      </ul>
+    </div>
+
 
     <div class="container mt-3">
       <router-view />
     </div>
   </div>
 </template>
+
 
 <script>
 export default {
