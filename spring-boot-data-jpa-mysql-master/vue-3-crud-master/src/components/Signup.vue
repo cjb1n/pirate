@@ -1,5 +1,17 @@
 <template>
-  <div class="container">
+  <div class>
+    <div class="navbar">
+      <a class="logo" href="/">
+        <img src="https://awesomedev.s3.ap-northeast-2.amazonaws.com/images/awesome.png" >
+      </a>
+      <ul>
+        <li class="font"><a href="/userlogin"><b>호텔</b></a></li>
+        <li class="font"><a href="/memberlist"><b>회원 정보</b></a></li>
+        <li class="font"><a href="/signup"><b>회원가입</b></a></li>
+        <li class="font"><a href="/login"><b>로그인</b></a></li>
+      </ul>
+      </div>
+      <hr>
     <div v-if="!submitted">
       <div class="input-form col-md-12 mx-auto">
       <h4 class="mb-3">회원가입</h4>
@@ -44,7 +56,7 @@
 
     <div v-else>
       <h4>회원가입이 완료되었습니다.</h4>
-      <button class="btn btn-success" @click="newTutorial">돌아가기</button>
+      <button class="btn btn-success" @click="newTutorial">로그인 페이지로 이동</button>
     </div>
     <div class="mb-4"></div>
     <footer class="my-3 text-center text-small">
@@ -133,6 +145,7 @@ export default {
   }
   .logo img{
     vertical-align: middle;
+    height: 40px ;
   }
   .navbar li{
     list-style-type: none;
